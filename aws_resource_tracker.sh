@@ -9,6 +9,7 @@
 # This script will report the AWS usage.
 ###############################
 
+# Enables a mode of the shell where all executed commands are printed to the terminal.
 set -x
 
 # AWS S3

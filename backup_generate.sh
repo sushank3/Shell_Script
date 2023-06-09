@@ -19,7 +19,7 @@ dest="/home/sushank/mount/backup"
 day=$(date +%A)                   
 hostname=$(hostname -s)
 #archive_file="$hostname-$day.tgz"
-archive_file="backup_`date +%d`_`date +%m`_`date +%Y`_`date +%A`.tar"
+archive_file="backup_`date +%m-%d-%y`.tar"
 
 # Print start status message.
 echo "Backing up $backup_files to $dest/$archive_file"

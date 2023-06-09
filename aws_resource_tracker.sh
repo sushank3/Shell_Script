@@ -18,13 +18,13 @@ set -x
 # AWS IAM Users
 
 # List all AWS S3 Buckets
-aws s3 ls
+aws s3 ls > output.txt
 
 # List all AWS EC2 Instances
-aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId' >> output.txt
 
 # List all Lambda functions
-aws lambda list-functions
+aws lambda list-functions >> output.txt
 
 # List all IAM Users
-aws iam list-users
+aws iam list-users >> output.txt

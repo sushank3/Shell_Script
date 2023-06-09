@@ -8,13 +8,13 @@ bash aws_resource_tracker.sh
 or
 
 Inside the directory where the file is located.
-
-./aws_resource_tracker.sh 
+RUN:
+    ./aws_resource_tracker.sh 
 
 # backup_generate
 Inside the directory where the file is located.
-
-./backup_generate.sh  
+RUN:
+    ./backup_generate.sh  
 
 add crontab:
 

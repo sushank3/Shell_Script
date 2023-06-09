@@ -20,8 +20,9 @@ set -x
 # List all AWS S3 Buckets
 aws s3 ls > output.txt
 
-# List all AWS EC2 Instances
+# List AWS EC2 Instances data
 aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId' >> output.txt
+aws ec2 describe-instances | jq '.Reservations[].Instances[].KeyName' >> output.txt
 
 # List all Lambda functions
 aws lambda list-functions >> output.txt

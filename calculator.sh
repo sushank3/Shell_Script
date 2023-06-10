@@ -11,27 +11,27 @@ echo ${num_2}
 
 case ${operator} in 
     '+')
-        echo "Answer: $((num_1+num_2))"
+        echo "Answer: $((num_1+num_2))"     # Addition
         ;;
 
     '-')
-        echo "Answer: $((num_1-num_2))"
+        echo "Answer: $((num_1-num_2))"     # Subtraction
         ;;
 
     '*')
-        echo "Answer: $((num_1*num_2))"
+        echo "Answer: $((num_1*num_2))"     # Multiplication
         ;;
 
     '/')
-        echo "Answer: $((num_1/num_2))"
+        echo "Answer: $((num_1/num_2))"     # Division
         ;;
         
     '%')
-        echo "Answer: $((num_1%num_2))"
+        echo "Answer: $((num_1%num_2))"     # Modulus
         ;;
 
     '**')
-        echo "Answer: $((num_1**num_2))"
+        echo "Answer: $((num_1**num_2))"       # Exponent
         ;;
     *) echo "Invalid Operator"
 	   exit;;

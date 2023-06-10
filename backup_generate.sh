@@ -36,3 +36,5 @@ date
 
 # Long listing of files in $dest to check file sizes.
 ls -lh $dest
+
+find "/home/sushank/mount/backup" -type f -mtime +5 -exec rm {} \;
